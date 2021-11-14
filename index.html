@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/652f8ed312.js" crossorigin="anonymous"></script>
+    <title>Capstone Project</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <header class="header">
+      <div class="logo"></div>
+      <h2 id="counter"></h2>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Groups
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Terriers</a>
+                <a class="dropdown-item" href="#">Hunters</a>
+                <a class="dropdown-item" href="#">Guard</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <ul class="list-container"></ul>
+      <ul class="pagination"></ul>
+      <article id="popup-article" class="d-none">
+        <div id="popup-container">
+          <div class="popup-scroll">
+            <button id="close-popup"><i class="fa fa-window-close fs-3" aria-hidden="true"></i></button>
+            <div id="popup-image">
+            </div>
+            <h2 class="popup-breed-name"></h2>
+            <div id="popup-info">
+              <div class="info-row">
+                <p class="popup-info-entry">
+                  <span class="info-entry-label">Breed group:</span>
+                  <span id="popup-breed_group"></span>
+                </p>
+                <p class="popup-info-entry">
+                  <span class="info-entry-label">Bred for:</span>
+                  <span id="popup-bred_for"></span>
+                </p>
+              </div>
+              <div class="info-row">
+                <p class="popup-info-entry">
+                  <span class="info-entry-label">Lifespan:</span>
+                  <span id="popup-life_span"></span>
+                </p>
+                <p class="popup-info-entry">
+                  <span class="info-entry-label">Height [cm]:</span>
+                  <span id="popup-height"></span>
+                </p>
+              </div>
+              <div class="info-row">
+                <p class="popup-info-entry">
+                  <span class="info-entry-label">Temperament:</span>
+                  <span id="popup-temperament"></span>
+                </p>
+                <div>
+                </div>
+              </div>
+            </div>
+            <div id="comments-container">
+              <h3>Comments <span id="comments-counter"></span></h3>
+              <ul id="comments-list">
+              </ul>
+            </div>
+            <h3>Add a comment</h3>
+            <form id="new-comment">
+              <input type="text" id="new-comment-name" class="my-2"
+                     placeholder="Your name">
+              <textarea id="new-comment-content" class="my-2" placeholder="Your insight">
+              </textarea>
+              <button id="new-comment-submit" class="comment-button">Comment</button>
+            </form>
+      </article>
+    </main>
+    <footer id="footer" class="d-none">
+      <p>Created by
+        <span class="author">Juan Felipe Gómez Tubón</span> and
+        <span class="author">Lucas Ferrari Soto</span>, under
+        <a href="https://github.com/notlfish/JavaScript-Capstone/blob/develop/LICENSE">MIT</a> License
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  </body>
+</html>
